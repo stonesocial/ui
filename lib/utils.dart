@@ -28,5 +28,6 @@ extension ThemeOfContext on BuildContext {
 
   Widget logo({double? size, bool dark = false}) => SvgPicture.asset(dark || isDark ? AppImages.logoDark : AppImages.logo, width: size ?? 80);
   Widget branding([double? size]) => SvgPicture.asset(isDark ? AppImages.brandingDark : AppImages.branding, width: size ?? 80);
+  Widget brandingIcon([double? size]) => Image.asset(isDark ? AppImages.brandingIconDark : AppImages.brandingIcon, width: size);
 }
 
