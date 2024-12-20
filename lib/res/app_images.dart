@@ -14,8 +14,6 @@ abstract class AppImages {
   static const wallet = 'assets/image/wallet.png';
   static const walletRestore = 'assets/image/wallet-restore.png';
   static const stats = 'assets/image/stats.png';
-  static const animatedLogo = 'assets/image/animated-logo.gif';
-  static const animatedLogoDark = 'assets/image/animated-logo-dark.gif';
   static const doubleCloud = 'assets/image/double-cloud.png';
   static const singleCloud = 'assets/image/single-cloud.png';
   static const en = 'assets/image/en.jpg';
