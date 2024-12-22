@@ -8,6 +8,7 @@ const _hapticKey = 'haptic_key';
 const _systemThemeKey = 'system_theme_key';
 const _notificationPushKey = 'notification_push_key';
 const _localeKey = 'locale_key';
+const _termsPolicyKey = 'terms_policy_key';
 
 class UiViewmodel extends ValueNotifier<Object?> {
   UiViewmodel(this.storage) : super([]) {
@@ -17,6 +18,7 @@ class UiViewmodel extends ValueNotifier<Object?> {
     getNotificationPush();
     setCurrentTheme();
     getLocale();
+    getTermsPolicy();
   }
 
   final ICacheStorage storage;
@@ -32,6 +34,8 @@ class UiViewmodel extends ValueNotifier<Object?> {
   final currentTheme = ValueNotifier(Themes.lightTheme);
 
   final notificationPushEnabled = ValueNotifier(true);
+
+  final isTermsPolicyAccepted = ValueNotifier(false);
 
   final locale = ValueNotifier<Locale?>(null);
 
@@ -67,6 +71,11 @@ class UiViewmodel extends ValueNotifier<Object?> {
     storage.setBool(_notificationPushKey, notificationPushEnabled.value).then(_onValue);
   }
 
+  void onTermsPolicyChange(bool value) {
+    isTermsPolicyAccepted.value = value;
+    storage.setBool(_termsPolicyKey, isTermsPolicyAccepted.value).then(_onValue);
+  }
+
   void onLocaleChange(String value) {
     locale.value = Locale(value);
     storage.setString(_localeKey, value).then(_onValue);
@@ -81,6 +90,8 @@ class UiViewmodel extends ValueNotifier<Object?> {
   void getAlertHaptic() => alertHapticEnabled.value = storage.getBool(_hapticKey) ?? true;
   
   void getNotificationPush() => notificationPushEnabled.value = storage.getBool(_notificationPushKey) ?? true;
+
+  void getTermsPolicy() => isTermsPolicyAccepted.value = storage.getBool(_termsPolicyKey) ?? false;
 
   void getLocale() {
     final localeCode = storage.getString(_localeKey);
