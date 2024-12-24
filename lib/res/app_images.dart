@@ -27,4 +27,6 @@ abstract class AppImages {
   static const slide1 = 'assets/image/1.png';
   static const slide2 = 'assets/image/2.png';
   static const slide3 = 'assets/image/3.png';
+  static const appStore = 'assets/image/app-store.png';
+  static const playStore = 'assets/image/play-store.png';
 }
