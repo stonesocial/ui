@@ -24,7 +24,7 @@ abstract class AppImages {
   static const de = 'assets/image/de.png';
   static const playStoreGet = 'assets/image/play-store-get.png';
   static const appleStoreGet = 'assets/image/apple-store-get.png';
-  static const authFrame = 'assets/image/auth-frame.png';
-  static const walletFrame = 'assets/image/wallet-frame.png';
-  static const feedFrame = 'assets/image/feed-frame.png';
+  static const slide1 = 'assets/image/1.png';
+  static const slide2 = 'assets/image/2.png';
+  static const slide3 = 'assets/image/3.png';
 }
