@@ -24,9 +24,24 @@ abstract class AppImages {
   static const de = 'assets/image/de.png';
   static const playStoreGet = 'assets/image/play-store-get.png';
   static const appleStoreGet = 'assets/image/apple-store-get.png';
-  static const slide1 = 'assets/image/1.png';
-  static const slide2 = 'assets/image/2.png';
-  static const slide3 = 'assets/image/3.png';
   static const appStore = 'assets/image/app-store.png';
   static const playStore = 'assets/image/play-store.png';
+  static const slide1En = 'assets/image/1-en.png';
+  static const slide2En = 'assets/image/2-en.png';
+  static const slide3En = 'assets/image/3-en.png';
+  static const slide1Pt = 'assets/image/1-pt.png';
+  static const slide2Pt = 'assets/image/2-pt.png';
+  static const slide3Pt = 'assets/image/3-pt.png';
+  static const slide1Es = 'assets/image/1-es.png';
+  static const slide2Es = 'assets/image/2-es.png';
+  static const slide3Es = 'assets/image/3-es.png';
+  static const slide1Ru = 'assets/image/1-ru.png';
+  static const slide2Ru = 'assets/image/2-ru.png';
+  static const slide3Ru = 'assets/image/3-ru.png';
+  static const slide1De = 'assets/image/1-de.png';
+  static const slide2De = 'assets/image/2-de.png';
+  static const slide3De = 'assets/image/3-de.png';
+  static const slide1Zh = 'assets/image/1-zh.png';
+  static const slide2Zh = 'assets/image/2-zh.png';
+  static const slide3Zh = 'assets/image/3-zh.png';
 }
