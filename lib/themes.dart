@@ -43,7 +43,7 @@ class Themes {
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.transparent,
       ),
-      dividerTheme: DividerThemeData(color: AppColors.primary.withOpacity(.1)),
+      dividerTheme: DividerThemeData(color: AppColors.primary.withValues(alpha: .1)),
       textSelectionTheme: const TextSelectionThemeData(
         cursorColor: AppColors.primary,
         selectionColor: Colors.grey,
@@ -81,7 +81,7 @@ class Themes {
         backgroundColor: AppColors.bgDark,
         surfaceTintColor: Colors.transparent,
       ),
-      dividerTheme: DividerThemeData(color: Colors.white.withOpacity(.1)),
+      dividerTheme: DividerThemeData(color: Colors.white.withValues(alpha: .1)),
       textSelectionTheme: const TextSelectionThemeData(
         cursorColor: Colors.white,
         selectionColor: Colors.grey,

@@ -18,12 +18,12 @@ extension ThemeOfContext on BuildContext {
   Color get greyShade300 => isDark ? Colors.grey.shade900 : Colors.grey.shade300;
 
   Color get surfaceColor => theme.colorScheme.surface;
-  Color get surface87 => surfaceColor.withOpacity(.87);
+  Color get surface87 => surfaceColor.withValues(alpha: .87);
 
   Color get primaryColor => theme.primaryColor;
-  Color get primary87 => primaryColor.withOpacity(.87);
+  Color get primary87 => primaryColor.withValues(alpha: .87);
 
-  Color get lightPrimary => primaryColor.withOpacity(.06);
+  Color get lightPrimary => primaryColor.withValues(alpha: .06);
   Color get snackBarColor => isDark ? AppColors.bg : AppColors.bgDark;
 
   Widget logo({double? size, bool dark = false}) => SvgPicture.asset(dark || isDark ? AppImages.logoDark : AppImages.logo, width: size ?? 80);
