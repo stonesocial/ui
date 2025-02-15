@@ -17,11 +17,12 @@ extension ThemeOfContext on BuildContext {
   Color get greyShade400 => isDark ? Colors.grey.shade900 : Colors.grey.shade400;
   Color get greyShade300 => isDark ? Colors.grey.shade900 : Colors.grey.shade300;
 
-  Color get surfaceColor => theme.colorScheme.surface;
-  Color get surface87 => surfaceColor.withValues(alpha: .87);
-
   Color get primaryColor => theme.primaryColor;
   Color get primary87 => primaryColor.withValues(alpha: .87);
+
+  Color get secondaryColor => theme.colorScheme.secondary;
+  Color get secondary87 => secondaryColor.withValues(alpha: .87);
+
 
   Color get lightPrimary => primaryColor.withValues(alpha: .06);
   Color get snackBarColor => isDark ? AppColors.bg : AppColors.bgDark;

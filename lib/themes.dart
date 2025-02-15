@@ -25,9 +25,8 @@ class Themes {
       scaffoldBackgroundColor: AppColors.bg,
       colorScheme: const ColorScheme.light(
         primary: AppColors.primary,
-        secondary: Colors.white,
+        secondary: AppColors.secondary,
         onSecondary: AppColors.bgDark,
-        surface: AppColors.surface,
         onTertiary: AppColors.primary,
       ),
       cardTheme: const CardTheme(
@@ -62,10 +61,8 @@ class Themes {
       scaffoldBackgroundColor: AppColors.bgDark,
       colorScheme: const ColorScheme.dark(
         primary: Colors.white,
-        secondary: AppColors.primary,
+        secondary: Colors.white,
         onSecondary: Colors.white,
-        onSurface: AppColors.primary,
-        surface: Colors.white,
         onTertiary: AppColors.cardDark,
       ),
       cardTheme: const CardTheme(
